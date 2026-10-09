@@ -1,0 +1,25 @@
+[project]
+name = "fpl-assistant"
+version = "0.1.0"
+description = "Fantasy Premier League prediction assistant for weekly squad selection"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+# Installing the package creates an `fpl` command that runs fpl.cli:main.
+[project.scripts]
+fpl = "fpl.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

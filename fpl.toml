@@ -1,0 +1,4 @@
+# Personal settings, kept out of the code so anyone can use this project with their own team.
+
+# The number in your Points page URL: fantasy.premierleague.com/entry/<team_id>/event/5
+team_id = 4625446
